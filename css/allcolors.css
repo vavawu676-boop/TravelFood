@@ -1,0 +1,159 @@
+/* 呼叫外部用的字體 上網找GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+:root {
+    --aqua-blue: #6DD5D0;
+    /* 清爽水藍 */
+    --cloud-white: #FFF9E8;
+    /* 雲朵奶油白 */
+    --coral-orange: #F28C6B;
+    /* 珊瑚橘 */
+    --deep-sea: #286477;
+    /* 深海藍 */
+    --lemon-yellow: #F4D35E;
+    /* 檸檬黃 */
+    --mint-green: #8FD8C1;
+    /* 薄荷綠 */
+    --sea-blue: #4FA9C6;
+    /* 清涼海水藍 */
+    --shell-pink: #F6C5B3;
+    /* 貝殼粉 */
+    --summer-sky: #87CEEB;
+    /* 夏日天空藍 */
+    --sunshine-yellow: #FFD966;
+    /* 陽光黃 */
+
+}
+
+/* ---------- 深色木質 × 金工鍛造色彩系統 ---------- */
+:root {
+    --wood-main: #c7a77a;
+    /* 木質主色：暖米棕／淺木色 */
+    --wood-red: #9E2F2F;
+    /* 輔助色：深磚紅／鐵鏽紅 */
+    --copper-main: #b06a3c;
+    /* 金工色：銅色／鐵鏽金屬色 */
+    --text-main: #f3ead5;
+    /* 主文字：暖米白／羊皮紙色 */
+}
+
+/* ---------- 色彩系統 ---------- */
+:root {
+
+    /* 木質色系 */
+    --wood-dark: #241914;
+    /* 深木色：深胡桃木／黑木，作為主要背景 */
+    --wood-main: #33231b;
+    /* 木頭主色：深棕木色，作為主要介面底色 */
+    --wood-light: #4a3224;
+    /* 木頭亮色：暖棕木色，用於卡片與區塊層次 */
+
+    /* 金工／鍛造鐵色系 */
+    --iron-dark: #171717;
+    /* 鍛造黑：深黑鐵色，營造厚重金屬感 */
+    --iron-main: #242424;
+    /* 鐵灰主色：深灰鐵色，用於按鈕與介面元素 */
+    --iron-light: #343434;
+    /* 鐵灰亮色：較亮的金屬灰，用於區塊層次 */
+
+    /* 金色系 */
+    --gold-dark: #8a672d;
+    /* 暗金色：舊金／黃銅色，呈現手工鍛造質感 */
+    --gold-main: #c9a45c;
+    /* 主金色：溫暖金色，作為品牌與重點裝飾 */
+    --gold-light: #e2c47a;
+    /* 亮金色：金屬高光色，用於標題與互動效果 */
+
+    /* 文字色系 */
+    --text-main: #f0e5d0;
+    /* 主文字色：暖米白，避免純白過於刺眼 */
+    --text-sub: #b9aa92;
+    /* 次要文字色：灰米色，用於說明文字與輔助資訊 */
+
+    /* 金色邊框 */
+    --border-gold: rgba(201, 164, 92, 0.45);
+    /* 半透明金色：用於邊框與細節裝飾 */
+}
+:root {
+    --wood-dark: #241A14;      /* 燻黑木頭 */
+    --wood-main: #33241B;      /* 老木頭 */
+    --wood-light: #493528;     /* 舊木板 */
+
+    --iron-dark: #1C1B18;      /* 鍛造黑鐵 */
+    --iron-main: #2C2A25;      /* 老鐵灰 */
+
+    --brass-dark: #6F5638;     /* 氧化黃銅 */
+    --brass-main: #9B7B4F;     /* 舊黃銅 */
+    --brass-light: #C2A16A;    /* 褪色金屬金 */
+
+    --paper-main: #E3D6BD;     /* 泛黃紙張 */
+    --paper-dark: #B8AA91;     /* 舊紙灰米色 */
+}
+
+
+/* 改變網站中所有字體 呼叫第一排IMPORT的設定字形 */
+body {
+    font-family: "Yusei Magic", sans-serif;
+}
+
+/* 字體粗細度呼叫 */
+.fw-100 {
+    font-weight: 100;
+}
+.fw-200 {
+    font-weight: 200;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-800 {
+    font-weight: 800;
+}
+.fw-900 {
+    font-weight: 900;
+}
+
+/* 標題設計版型 */
+.mytitle-01{
+    font-size: 36px;
+    font-weight: 500;
+    text-align: center;
+     /* 舊黃銅色：低調、溫暖，適合小標題 */
+    color: #B08D57;
+}
+.mytitle-02{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    /* 古銅金：帶有日本老工房與金屬氧化後的質感 */
+    color:  #C49A5A;
+}
+.mytitle-03{
+    font-size: 52px;
+    font-weight: 900;
+    text-align: center;
+    color:  #D4AF6A;/* 鍛造金：較明亮的金屬色，作為主標題視覺焦點 */
+    /* 給予範圍背景色 */
+    background-color: #C49A5A;
+
+}
+
+/* 背景圖用  把圖片預設的尺寸位置寫好*/
+.bg-img{
+       /* 定位背景圖片位置 X軸 Y軸 */
+            background-position: center center;
+            /* 定位背景圖片尺寸 COVER自動置中調整 */
+            background-size: cover;
+}
