@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ezh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML與CSS語法</title>
+    <!-- CSS語法 呼叫style 在style中呼叫HTML中的符號 -->
+    <style>
+        /* 呼叫P，修改HTML中"P"包含的所有文字 */ 
+        /* .mytext01 .可以呼叫CLASS自訂的名稱單獨修改 */
+        p{ 
+            /* font-size: ; 文字大小   */
+            font-size: 15px;  
+            /* font-weight: ; 文字粗度 */
+            font-weight: bold;
+            /* color: #000; 文字顏色 使用RGB*/
+            color: tomato;
+        }
+        .mytext01{
+            font-size: 30PX;
+            font-weight: 600;
+            color: #c9b612;
+        }
+        .mytext02{
+            font-size: 17PX;
+            font-weight: lighter;
+            color: #259918  ;
+        }
+        .mytext03{
+            font-size: 20px;
+            font-weight: 200;
+            color: crimson;
+        }
+        .mytext04{
+            color: #259999;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 註解內容按:CTRL+/ 會包覆註解內容 -->
+    <!-- P:段落換行運用 -->
+    <!-- class="" 自訂呼叫名稱  -->
+    <p class="mytext01">111111111</p>
+    <p class="mytext02">程式國際管理員人們電子商務體育，想法大。</p>
+    <p class="mytext03">讓人最好的，還有學。</p>
+    <!-- H+數字1234 字體大小 -->
+    <h1 class="mytext04">H1粗體標題</h1>
+    <H2>H2小標題</H2>
+    <H3>H3更小標題</H3>
+    <H4>H4小小標題</H4>
+    <H5>H5小小小標題</H5>
+    <H6>H6 小小小小標題</H6>
+    <h1>大標題</h1>
+    <p>達到空氣不需要不是很，空調品牌我們時間準確發表吃了基礎共有提出了也就是必須大家工作人員，
+        是這樣硬盤交換，講話成就電視下列無人賓館認真上帝接下來不懂夏天工作，思。</p>
+
+    <!-- SRC=圖片位置來源 ALT=描述圖片內容  WIDTH=寬度 HEIGHT=圖片高度  -->
+    <img src="images/leather01.jpg" alt="手縫過程" width="500" height="">
+    <img src="images/leather02.jpg" alt="工具照片01" width="500" height="">
+    <img src="images/leather03.jpg" alt="工具照片02" width="500" height="">
+    <img src="images/leather04.jpg" alt="皮革展示" width="500" height="">
+    <!-- a=超連結 herf=輸入正確網址 target="_blabk"=新開視窗  -->
+    <p><a href="https://www.google.com/" target="_blank">GOOGLE</a></p>
+    <!-- <a href="">這裡可以放圖片位置或是文字做連外超連結</a> -->
+    <p><a href="https://tw.yahoo.com/" target="_blank">
+            <img src="images/leather05.jpg" alt="雅虎連結" width="100" height="100">
+        </a>
+    </p>
+
+</body>
+
+</html>
