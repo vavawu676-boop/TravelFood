@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap框架練習</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/allcolors.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- 類似margin用法，把元件固定在正中央 -->
+    <div class="container">
+        <!-- 切版卡片排版 -->
+        <div class="row row-cols-1 row-cols-md-2 g-4 mt-1 " id="foodlist">
+            <div class="col">
+                <!-- p=padding pt=padding-top  pb=padding-bottom  pe=padding-left ps=padding-right -->
+                <div class="card p-2">
+                    <img src="images/leather04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <!-- text-start 文字對齊右邊 text-center 文字對齊中間 text-end 文字對齊左邊 -->
+                        <!-- m=margin mt=margin-top  mb=margin-bottom  me=margin-left ms=margin-right -->
+                        <div class="display-6 fw-900 text-start mt-1">餐廳名稱</div>
+                        <div class="h5 text-center mt-3">電話:0912345678</div>
+                        <div class="h5 text-end mb-1">地址:XXXXXXXXXX</div>
+                        <!-- text-truncate 讓多餘文字隱藏，顯示為...，避免佔用版面跑版 -->
+                        <p class="card-text text-start text-truncate">
+                            在我地說銀行作為男人信箱說法都市經常更是女朋友電器原始碼光臨，該公司光臨他還基地，指定孩子溝通認證初步改變呼吸，不喜歡明白算是，微微不會情感對方執行統計同志本類旅遊阿摩斯，品牌認證這就是創作徹底，當然三個故意反映存款鍵盤，小區的說中文版，第二天隱藏，寫真。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/leather04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/leather04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/leather04.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 結尾最下端用 按鈕表單 -->
+    <!-- justify-content-center 讓表單定位在畫面中間 -->
+    <ul class="nav  justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">power by XXX 2026.10.1</a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+        </li> -->
+    </ul>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jQuery-4.0.0.js"></script>
+    <script src="js/TravelFood.js">  </script>
+    <script>
+        console.log(food);
+        // .empty()清空前面的區塊的內容
+        $("#foodlist").empty()
+        food.forEach(function (item) {
+            const strHTML = `<div class="col">
+                <div class="card p-2">
+                    <img src="${item.PicURL}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="display-6 fw-900 text-start mt-1">${item.Name}</div>
+                        <div class="h5 text-center mt-3">電話:${item.Tel}</div>
+                        <div class="h5 text-end mb-1">地址:${item.City}${item.Town}${item.Address}</div>
+                        <p class="card-text text-start text-truncate">
+                            ${item.HostWords}
+                        </p>
+                    </div>
+                </div>
+            </div>`;
+            $("#foodlist").append(strHTML);
+        });
+    </script>
+</body>
+
+</html>
